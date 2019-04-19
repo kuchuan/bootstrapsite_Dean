@@ -15,7 +15,7 @@
   </head>
   <body>
 
-  <body style="padding-top:3.5rem;">
+  <!-- <body style="padding-top:3.5rem;"> -->
 
 <!-- <div id="header">
    ヘッダーがはいります
@@ -26,7 +26,7 @@
 </div> -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
-  <a class="navbar-brand" href="#">Dean's Long Vacation in 2018</a>
+  <a class="navbar-brand text-white" href="#">Dean's Long Vacation in 2018</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,7 +35,7 @@
     <!-- メニューを二つに分けて左寄せにした(mr-auto) -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home<!-- <span class="sr-only">(current)</span> --></a>
       </li>
     </ul>
     <!-- メニューを二つに分けて右寄せした(mr-left-auto) -->
@@ -67,18 +67,20 @@
 </nav>
 
 
-<!-- colusel -->
+<!-- carousel -->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
   </ol>
   <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="img/01totle.jpg" alt="ウミガメ">
             <div class="carousel-caption d-none d-md-block">
-              <div class=glow_banner>
+              <div class="glow_banner">
                 <span class="catch">
                   <h5>フィリピン・セブ・モアルボアル</h5>
                   <p>アイランドホッピングの途中のウミガメが見えるスポット。</p>
@@ -88,7 +90,7 @@
           </div><!-- /.carousel-item -->
 <!--       <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: First slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg> -->
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/02hana.jpg" alt="花畑">
+            <img class="d-block w-100 " src="img/02hana.jpg" alt="四季彩の丘">
             <div class="carousel-caption d-none d-md-block">
               <div class=glow_banner>
                 <span class="catch">
@@ -102,15 +104,37 @@
           <div class="carousel-item">
             <img class="d-block w-100" src="img/03itary.jpg" alt="チンクエテッレ">
             <div class="carousel-caption d-none d-md-block">
-              <div class=glow_banner>
+              <div class="glow_banner">
                 <span class="catch">
                   <h5>イタリア・チンクエテッレ</h5>
-                  <p>ジェノバから特急で約２時間。イタリア国内からの観光客が多い。</p>
+                  <p>ジェノバから特急で約２時間。イタリア国内からの観光客が多い</p>
                 </span>
               </div>
             </div><!-- /.carousel-caption -->
           </div><!-- /.carousel-item -->
 <!--       <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Third slide"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"/><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg> -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/04pisa.jpg" alt="ピサ">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="glow_banner">
+                <span class="catch">
+                  <h5>イタリア・ピサ</h5>
+                  <p>ピサはイタリアのトスカーナ州にある都市。象徴的な存在であるピサの斜塔は高さ 56 m</p>
+                </span>
+              </div>
+            </div><!-- /.carousel-caption -->
+          </div><!-- /.carousel-item -->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/05mac.jpg" alt="ピサ">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="glow_banner">
+                <span class="catch">
+                  <h5>日本・北海道・美瑛</h5>
+                  <p>「青い池」、Macの壁紙にも使われた“コバルトブルーの絶景”</p>
+                </span>
+              </div>
+            </div><!-- /.carousel-caption -->
+          </div><!-- /.carousel-item -->
   </div>
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -127,48 +151,64 @@
 
 
 <!-- feature -->
+
+<a id="feature" class="mb-3">　</a>
 <div class="container">
-  <a id="feature" class="mb-3">
 		<h2 class="pt-5">FEATURE</h2>
-  </a>
-      <div class="card-columns">
-        <div id="carousel-card" class="carousel slide">
-          <!-- <div class="row"> -->
-           <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/card01.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">マラパスクワの夕日</h5>
-                  <p class="card-text">マラパスクア島は南北に細長いセブ島の最北端に位置し、東西に１km・南北に2.5kmの小さな小さな島。第２のボラカイ島と言われているマラパスクア島は、セブ市内からバスで４～５時間。閑静なリゾート地でありながら、世界有数のダイビングスポットを持ち、ニタリザメとの遭遇は９０％を超える。また、白沙のカランガマン島への玄関にもなっている</p>
-                </div>
-            </div>
 
-            <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/card02.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">マリーナ・ディ・ロアーノの船</h5>
-                  <p class="card-text">ロアーノ(伊: Loano)は、イタリア共和国リグーリア州サヴォーナ県にある、人口約11,000人の基礎自治体。このマリーナにはイタリアだけでなく、フランス、ドイツ、スイスなどに住む人々のヨットが繫留されている。カーサ・バカンツァのあるピエトロ・リグーレからは歩いて３０分ほどの距離。地元で獲れたシーフードは多くの旅行客を楽しませている。</p>
+            <div class="card-deck">
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="img/card01.jpg" alt="カード1の画像">
+                        <div class="card-body">
+                          <h5 class="card-title">マラパスクワの夕日</h5>
+                          <p class="card-text">マラパスクア島は南北に細長いセブ島の最北端に位置し、東西に１km・南北に2.5kmの小さな小さな島。第２のボラカイ島と言われているマラパスクア島は、セブ市内からバスで４～５時間。閑静なリゾート地でありながら、世界有数のダイビングスポットを持ち、ニタリザメとの遭遇は９０％を超える。また、白沙のカランガマン島への玄関にもなっている</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">（撮影）2018.04.28</small>
+                        </div>
+                      </div>
                 </div>
-            </div>
+                <div class="col-sm-6 col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="img/card02.jpg" alt="カード2の画像">
+                        <div class="card-body">
+                          <h5 class="card-title">マリーナ・ディ・ロアーノ</h5>
+                          <p class="card-text">アーノ(伊: Loano)は、イタリア共和国リグーリア州サヴォーナ県にある、人口約11,000人の基礎自治体。このマリーナにはイタリアだけでなく、フランス、ドイツ、スイスなどに住む人々のヨットが繫留されている。カーサ・バカンツァのあるピエトロ・リグーレからは歩いて３０分ほどの距離。地元で獲れたシーフードは多くの旅行客を楽しませている。</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">（撮影）2018.08.04</small>
+                        </div>
+                      </div>
+                </div>
 
-            <div class="card" style="width: 20rem;">
-            <img class="card-img-top" src="img/card03.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">チンクエテッレの彩り</h5>
-                  <p class="card-text">チンクエ・テッレ（イタリア語: Cinque Terre）は、イタリア北西部のリグーリア海岸にある5つの村を指す。険しい海岸に色とりどりの家屋が並ぶ文化的景観によって知られており、ポルトヴェーネレや小島群などと共にユネスコの世界遺産に登録されている。愛の小道  (it:Via dell'Amore)はマナローラとリオマッジョーレの間をつなぐ約1キロ強の遊歩道。2018年8月現在がけ崩れのため修復中。</p>
+                <div class="col-sm-6 col-md-4">
+                      <div class="card">
+                        <img class="card-img-top" src="img/card03.jpg" alt="カード3の画像">
+                        <div class="card-body">
+                          <h5 class="card-title">チンクエテッレの彩り</h5>
+                          <p class="card-text">チンクエ・テッレ（イタリア語: Cinque Terre）は、イタリア北西部のリグーリア海岸にある5つの村を指す。険しい海岸に色とりどりの家屋が並ぶ文化的景観によって知られており、ポルトヴェーネレや小島群などと共にユネスコの世界遺産に登録されている。愛の小道  (it:Via dell'Amore)はマナローラとリオマッジョーレの間をつなぐ約1キロ強の遊歩道。2018年8月現在がけ崩れのため修復中。</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">（撮影）2018.08.10</small>
+                        </div>
+                      </div>
                 </div>
             </div>
           </div>
-      </div>
-    </div>
+
 </div>
+
+
+
 <!-- end of Feature -->
 
 
 <!-- Access -->
+<a id="access">　</a>
 <div class="container">
-  <a id="access">
     <h2 class="pt-5">ACCESS</h2>
-  </a>
     <h5>Malapascua Island</h5>
     <div class="iframe-content">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15647.867641201134!2d124.10535137331435!3d11.337127560170075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a7de60aa76852f%3A0xe9237836540d3363!2z44Oe44Op44OR44K544Kv44Ki5bO2!5e0!3m2!1sja!2sph!4v1555569510422!5m2!1sja!2sph" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -180,14 +220,18 @@
 <!-- end of access -->
 
 <!-- News -->
-  <a id="news">
+  <a id="news">　</a>
     <h2 id="News" class="pt-5">NEWS</h2>
-  </a>
+
   <table class="table">
     <today>
         <tr>
             <th>2019.04.01</th>
             <td>お知らせを更新しました</td>
+        </tr>
+        <tr>
+            <th>2019.04.10</th>
+            <td>ブログを更新しました</td>
         </tr>
         <tr>
             <th>2019.04.17</th>
@@ -203,9 +247,9 @@
 
 <!-- contact -->
 <div class="container py-3">
-  <a id="contact" >
+  <a id="contact" >　</a>
       <h2 class="pt-5">CONTACT</h2>
-  </a>
+  
           <form class="form-horizontal pt-3">
             <div class="row">
               <label for="inputName" class="col-sm-4 control-label">名前</label>
@@ -273,9 +317,7 @@
 <!-- Footer Elements -->
 <footer class="page-footer font-small blue bg-indigo pt-4">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3  bg-info text-white">&copy; Copyright: 
-      <a class="footer-copyright-link text-white" href="http://kuchuan.jp/"><strong>Kuchuan Education & Infomation Studio</strong>. All Rights Reserved</a>
-    </div>
+    <div class="footer-copyright text-center py-3  bg-info text-white">&copy; 2019 Copyrights : <a class="footer-copyright-link text-white" href="http://kuchuan.jp/"><strong>Kuchuan Education &amp; Infomation Studio</strong>. All Rights Reserved</a></div>
     <!-- Copyright -->
 </footer>
 <!-- end of footer -->
